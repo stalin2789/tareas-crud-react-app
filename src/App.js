@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function App() {
+
+  const [task, setTask] = useState(null)
+
   return (
     <div className="container mt-5">
       <h1>Tareas</h1>
@@ -19,7 +22,10 @@ function App() {
         <div className="col-4">
         <h4 className="text-center">Formulario</h4>
           <form>
-            <input type="text" className="form-control mb-2" placeholder="Ingrese su tarea...">
+            <input type="text" 
+            className="form-control mb-2" 
+            placeholder="Ingrese su tarea..."
+            onChange>
             </input>
             <button className="btn btn-primary btn-block"
             type="submit"
